@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лирика Ибрагима Юсупова: Мир чувств и природы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Эффект частиц на фоне -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Главный экран -->
+    <header id="hero">
+        <div class="hero-background">
+            <div class="parallax-layer layer-1"></div>
+            <div class="parallax-layer layer-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">Лирика Ибрагима Юсупова</h1>
+            <p class="subtitle fade-in">Мир чувств и природы</p>
+            <a href="#biography" class="scroll-down-btn">
+                <span>Погрузиться</span>
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Раздел: Биография -->
+        <section id="biography" class="reveal">
+            <div class="container">
+                <div class="bio-grid">
+                    <div class="bio-text">
+                        <h2>Голос Каракалпакской степи</h2>
+                        <p>Ибрагим Юсупов (1929–2008) — великий поэт, чье слово стало душой народа. Герой Узбекистана, он воспел красоту родного края с такой нежностью и глубиной, что его стихи стали вечными спутниками каждого, кто любит жизнь и природу.</p>
+                        <p>Его творчество — это мост между культурами, где «древа Пушкина росток» переплетается с мудростью Бердаха, создавая уникальный узор философской лирики.</p>
+                    </div>
+                    <div class="bio-image">
+                        <div class="image-frame">
+                            <!-- Заглушка для изображения, стилизованная под художественную рамку -->
+                            <div class="placeholder-art"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Мир чувств (Цитаты) -->
+        <section id="feelings" class="reveal">
+            <div class="container">
+                <h2 class="section-title">Мир чувств</h2>
+                <div class="quotes-grid">
+                    <div class="quote-card">
+                        <p>«Я зеленая ветвь! Сок земли животворный я впитала!»</p>
+                        <span class="quote-source">Сборник «Лирика счастья»</span>
+                    </div>
+                    <div class="quote-card">
+                        <p>«Я ведь ветка твоя! Без тебя меня нет.»</p>
+                        <span class="quote-source">Стихотворение «Родина»</span>
+                    </div>
+                    <div class="quote-card">
+                        <p>«Только тот может истинным быть гражданином, кто вместит в своем сердце всю землю твою!»</p>
+                        <span class="quote-source">Философские думы</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Природа в поэзии (Галерея) -->
+        <section id="nature" class="reveal">
+            <div class="container">
+                <h2 class="section-title">Природа в поэзии</h2>
+                <div class="nature-gallery">
+                    <div class="gallery-item" data-poem="Я во всем узнавал тебя — в тающем клине улетающих птиц над осенней страной...">
+                        <div class="gallery-img-placeholder steppe"></div>
+                        <div class="gallery-overlay">
+                            <span>Степь</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-poem="В громком зове фазана из рощи ночной, в крике коростеля на пустынной равнине.">
+                        <div class="gallery-img-placeholder sunset"></div>
+                        <div class="gallery-overlay">
+                            <span>Закат</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-poem="Ты была, моя Родина, теплой рекою, и в коробочке хлопка твой лик возникал.">
+                        <div class="gallery-img-placeholder water"></div>
+                        <div class="gallery-overlay">
+                            <span>Вода</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-poem="И свирель из коры твоей тонко звучала — отголосок наивных раздумий моих.">
+                        <div class="gallery-img-placeholder wind"></div>
+                        <div class="gallery-overlay">
+                            <span>Ветер</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="poem-display" class="poem-display">
+                    <p id="poem-text">Нажмите на изображение, чтобы услышать голос природы...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Цитата дня -->
+        <section id="daily-quote" class="reveal">
+            <div class="container">
+                <div class="quote-generator-box">
+                    <h3>Строка дня</h3>
+                    <div id="random-quote-container">
+                        <p id="random-quote">«Загрузка мудрости...»</p>
+                    </div>
+                    <button id="new-quote-btn">Другая строка</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p class="footer-quote">«Сколько б я ни любил землю ту, где родился, но отдельно от Родины — что мне она?»</p>
+            <div class="footer-info">
+                <p>&copy; 2026 Посвящение Ибрагиму Юсупову</p>
+                <p>Мир чувств и природы</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
